@@ -6,7 +6,7 @@
     },
     {
       "name": "team_suffix",
-      "value": "gc"
+      "value": "t1"
     },
     {
       "name": "subscriptionid",
@@ -14,7 +14,7 @@
     },
     {
       "name": "repoName",
-      "value": "mgr-sh360-bookings-template"
+      "value": "mgr-sh360-bookings-t1"
     },
     {
       "name": "servicePrincipleObjId",
