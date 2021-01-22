@@ -256,7 +256,7 @@ jobs:
     needs: [release]
     runs-on: windows-latest
     outputs:
-      bdd_status: ${{ steps.bddtests.outputs.outcome }}
+      bdd_status: ${{ steps.bddtests.outcome }}
     if: needs.release.outputs.pipeline_env == 'qa'
     steps:
     - uses: actions/checkout@v2
@@ -310,7 +310,7 @@ jobs:
     needs: [release]
     runs-on: windows-latest
     outputs:
-      ui_status: ${{ steps.uitests.outputs.outcome }}
+      ui_status: ${{ steps.uitests.outcome }}
     if: needs.release.outputs.pipeline_env == 'qa'
     steps:
     - uses: actions/checkout@v2
@@ -436,7 +436,7 @@ jobs:
     needs: [release]
     runs-on: ubuntu-latest
     outputs:
-      owasp_status: ${{ steps.owasptests.outputs.outcome }}
+      owasp_status: ${{ steps.owasptests.outcome }}
     steps:
 
     - uses: actions/checkout@v2
