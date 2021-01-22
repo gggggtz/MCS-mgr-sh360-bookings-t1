@@ -484,6 +484,7 @@ jobs:
     
   Issues_Creation:
     needs: [BDD_Automated_Tests,UI_Tests]
+    if: always()
     runs-on: ubuntu-latest
     steps:
 
