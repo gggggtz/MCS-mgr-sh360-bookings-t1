@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 
 namespace SmartHotel.Registration.DataAccessLayer.Generators
-{
+{ /// <summary>
+///  This is address generator
+/// </summary>
     public class AddressGenerator
     {
         private static List<string> _postCodes = new List<string>
