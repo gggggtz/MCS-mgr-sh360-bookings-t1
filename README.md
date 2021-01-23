@@ -1,5 +1,5 @@
 # sh360-bookings
-Repository for Make GitHub Real POC - Smart Hotel 360 bookings application code
+Repository for Make GitHub Real POC - Smart Hotel 360 bookings code
 
 Workflow Status:
 ![Bookings-CI-Base](https://github.com/Microsoft-Consulting-Services/mgr-sh360-bookings-template/workflows/Bookings-CI-Base/badge.svg)
