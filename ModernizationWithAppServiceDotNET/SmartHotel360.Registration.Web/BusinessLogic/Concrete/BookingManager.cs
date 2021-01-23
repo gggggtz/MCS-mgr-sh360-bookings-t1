@@ -35,6 +35,8 @@
 
         public List<Models.Registration> SearchGuestByFirstName(string firstName)
         {
+            //throw new NotImplementedException();
+
             //Below code will call booking repository layer method GetBookingsByCustomerFirstName.
             var checkins = this.bookingRepository.GetBookingsByCustomerFirstName(firstName);
 

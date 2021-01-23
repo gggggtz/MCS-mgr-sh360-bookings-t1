@@ -100,21 +100,23 @@
 
         public List<Registration> GetBookingsByCustomerFirstName(string firstName)
         {
+            //throw new NotImplementedException();
+
             // Below code will fetch bookings based on customer first name from database.
 
             if (string.IsNullOrEmpty(firstName))
-            {
-                throw new ArgumentNullException(nameof(firstName));
-            }
+           {
+             throw new ArgumentNullException(nameof(firstName));
+           }
 
             var booking = from b in this.bookingsDbContext.Bookings
-                          where b.CustomerName.StartsWith(firstName.Trim())
-                          select b;
+                        where b.CustomerName.StartsWith(firstName.Trim())
+                      select b;
             var checkins = booking
            .Select(BookingTypes.BookingToCheckin);
 
-            var registrations = checkins.ToList();
-            return registrations;
+           var registrations = checkins.ToList();
+           return registrations;
         }
     }
 }
